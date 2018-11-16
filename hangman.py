@@ -4,7 +4,7 @@ import os
 import sys
 
 def main():
-    print "Sveiki atvyke i HANGMAN'a!"
+    print "sveiki atvyke i hangman'a!"
 
     file_obj = open("zodziu_sarasas.txt", "r")
 
@@ -17,7 +17,7 @@ def main():
     lygis = 0
     while not int(lygis) in range(2, praeitas_ilgis+1): #kol lygis nera mums tinkamas - leidziami while loopa
         try:
-            lygis = int(raw_input("Ivesk lygi 2-{}   ".format(praeitas_ilgis)))
+            lygis = int(raw_input("ivesk lygi 2-{}   ".format(praeitas_ilgis)))
         except ValueError as e:
             print "ivesk skaiciu"
 
@@ -38,46 +38,30 @@ def main():
     zodis_atspek = random.choice(zodziu_sarasas).lower()
     pasleptas_zodis = "_" * (len(zodis_atspek))
 
-    # PADARYTI WHILE CIKLA KURIS SPELIOJA IR ATIDENGIA RAIDES
-    # PATIKRINTI AR SPETA RAIDE YRA ZODYJE
-    # RASTI SPETOS RAIDES PADETI
-    # ATIDENGTI RAIDE
-
-    # for i in range(0, len(zodis)):
-
-    # def kartoti():
-    #     restart = raw_input("Would you like to restart this program?")
-    #     if restart == "yes" or restart == "y":
-    #         python = sys.executable
-    #         os.execl(python, python, *sys.argv)
-    #     if restart == "n" or restart == "no":
-    #         print "Script terminating. Goodbye."
-    #     pass
-
     zodis_neatspetas = True
 
-    while zodis_neatspetas:
+    while zodis_neatspetas: # while ciklas kuris spelioja ir atidengia raides
 
         print pasleptas_zodis
         print zodis_atspek
 
-        if pasleptas_zodis == zodis_atspek:
-            print "ZODIS ATSPETAS! :)"
+        if pasleptas_zodis == zodis_atspek: # patikrinti ar speta raide yra zodyje
+            print "zodis atspetas! :)"
             break
 
         if gyvybes == 0:
-            print "TAVE PAKORE :("
+            print "tave pakore :("
             break
 
-        spejimas = raw_input("Spek raide: ").lower()
+        spejimas = raw_input("spek raide: ").lower()
 
         if spejimas in zodis_atspek:
             raides = list(zodis_atspek)
-            for indexas, value in enumerate(raides):
+            for indexas, value in enumerate(raides):     # rasti spetos raides padeti
                 if value == spejimas:
                     pasleptas_zodis_list = list(pasleptas_zodis)
                     pasleptas_zodis_list[indexas] = spejimas
-                    pasleptas_zodis = "".join(pasleptas_zodis_list)
+                    pasleptas_zodis = "".join(pasleptas_zodis_list)     # atidengti raide
                     print "atspejai raide! :)"
                     print pasleptas_zodis
 
@@ -89,15 +73,14 @@ def main():
             print HANGMANPICS[pak_img]
 
 
-
     while True:
-        answer = raw_input('Kartoti? (y/n): ').lower()
+        answer = raw_input('kartoti? (y/n): ').lower()
         if answer in ('y', 'n'):
             if answer == 'y':
                 main()
 
             else:
-                print 'Ate'
+                print 'ate'
             break
 
 main()
