@@ -3,8 +3,8 @@ from ascii import *
 import os
 import sys
 
-def main():
-    print "sveiki atvyke i hangman'a!"
+def main(): #pagrindine programa
+    print "sveiki atvyke i HANGMAN'a!"
 
     file_obj = open("zodziu_sarasas.txt", "r")
 
@@ -26,9 +26,12 @@ def main():
         gyvybes = input("pasirink kiek turesi gyvybiu: 3-6 ")  # choose a shift
 
     pak_img = 6 - gyvybes
+    zodziu_sarasas = []
+    spejimu_raides = []
 
     file_obj = open("zodziu_sarasas.txt", "r")  # galima kursoriu grazint i pradzia - google
-    zodziu_sarasas = []
+
+
 
     for zodis in file_obj.readlines():
         zodzio_ilgis = len(zodis[:-1])
@@ -43,17 +46,28 @@ def main():
     while zodis_neatspetas: # while ciklas kuris spelioja ir atidengia raides
 
         print pasleptas_zodis
+        # print type(spejimu_raides)
         print zodis_atspek
 
         if pasleptas_zodis == zodis_atspek: # patikrinti ar speta raide yra zodyje
-            print "zodis atspetas! :)"
+            print "ZODIS ATSPETAS! :)"
             break
 
         if gyvybes == 0:
-            print "tave pakore :("
+            print "TAVE PAKORE :("
             break
 
-        spejimas = raw_input("spek raide: ").lower()
+        while True:
+            spejimas = raw_input("spek raide: ")
+            if spejimas.isalpha():  # leidziamos tik raides
+                break
+
+        if spejimas in spejimu_raides: #tikrinu ar raide jau buvo speta
+            for indexas, value in enumerate(spejimas):     # rasti spetos raides padeti
+                if value == spejimas:
+                    spejimu_raides.pop(indexas) #isimu raide is saraso - kita kart skaiciuos kaip klaida
+            print "Jau spejai sia raide! Kita kart skaiciuosiu kaip klaida..."
+            continue
 
         if spejimas in zodis_atspek:
             raides = list(zodis_atspek)
@@ -63,7 +77,6 @@ def main():
                     pasleptas_zodis_list[indexas] = spejimas
                     pasleptas_zodis = "".join(pasleptas_zodis_list)     # atidengti raide
                     print "atspejai raide! :)"
-                    print pasleptas_zodis
 
         else:
             print "neteisingai :( bandyk dar kart..."
@@ -72,15 +85,16 @@ def main():
             print ("gyvybes: " + str(gyvybes))
             print HANGMANPICS[pak_img]
 
+        spejimu_raides.append(spejimas) #pridedu speta raide i pasikartojanciu raidziu sarasa
+        # print spejimu_raides
 
     while True:
-        answer = raw_input('kartoti? (y/n): ').lower()
-        if answer in ('y', 'n'):
-            if answer == 'y':
-                main()
-
+        answer = raw_input("kartoti? (y/n): ").lower()
+        if answer in ("y", "n"):
+            if answer == "y":
+                main() #restartinu programa
             else:
-                print 'ate'
+                print "ate"
             break
 
-main()
+main() #paleidziu programa

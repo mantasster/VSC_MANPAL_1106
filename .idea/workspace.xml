@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fb56b178-2b31-4e08-beb1-5aa743b1dd8f" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/hangman.py" beforeDir="false" afterPath="$PROJECT_DIR$/hangman.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -14,8 +15,10 @@
     <session id="-1451559166">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
+          <entry key="project.closed" value="1" />
           <entry key="project.open.time.1" value="1" />
-          <entry key="project.opened" value="1" />
+          <entry key="project.open.time.7" value="1" />
+          <entry key="project.opened" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -33,33 +36,26 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="Python Console" value="58" />
-          <entry key="py" value="2711" />
+          <entry key="py" value="3385" />
+          <entry key="txt" value="25" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="Python" value="2769" />
+          <entry key="PLAIN_TEXT" value="25" />
+          <entry key="Python" value="3443" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.vcs.git.usages" />
     </session>
   </component>
   <component name="FileEditorManager">
-    <leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/zodziu_sarasas.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="5016">
-              <caret line="872" column="3" lean-forward="true" selection-start-line="872" selection-start-column="3" selection-end-line="872" selection-end-column="3" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ascii.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="11" selection-end-column="11" />
+            <state relative-caret-position="437">
+              <caret line="872" column="3" selection-start-line="872" selection-start-column="3" selection-end-line="872" selection-end-column="3" />
             </state>
           </provider>
         </entry>
@@ -67,8 +63,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/hangman.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-408">
-              <caret line="43" lean-forward="true" selection-start-line="43" selection-end-line="43" />
+            <state relative-caret-position="1700">
+              <caret line="100" lean-forward="true" selection-start-line="100" selection-end-line="100" />
               <folding>
                 <element signature="e#0#13#0" expanded="true" />
               </folding>
@@ -92,6 +88,9 @@
       <find>pak</find>
       <find>pak_imgaruoklis_obj</find>
       <find>-1</find>
+      <find>app</find>
+      <find>saras</find>
+      <find>spejimu_r</find>
     </findStrings>
     <replaceStrings>
       <replace>pak_img</replace>
@@ -190,25 +189,34 @@
       <option name="presentableId" value="Default" />
       <updated>1542216151050</updated>
     </task>
+    <task id="LOCAL-00001" summary="Naujausias hangmanas">
+      <created>1542379379879</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1542379379880</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1550" height="838" extended-state="7" />
+    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info id="Favorites" side_tool="true" />
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2247191" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Version Control" weight="0.32907802" />
-      <window_info anchor="bottom" id="Python Console" weight="0.32907802" />
-      <window_info anchor="bottom" id="Terminal" weight="0.32907802" />
-      <window_info anchor="bottom" id="Event Log" side_tool="true" />
+      <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32907802" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.4113475" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Version Control" order="7" weight="0.32907802" />
+      <window_info anchor="bottom" id="Terminal" order="8" weight="0.32907802" />
+      <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
+      <window_info anchor="bottom" id="Python Console" order="10" weight="0.32907802" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -217,28 +225,30 @@
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Naujausias hangmanas" />
+    <option name="LAST_COMMIT_MESSAGE" value="Naujausias hangmanas" />
+  </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/zodziu_sarasas.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/zodziu_sarasas.txt">
+    <entry file="file://$PROJECT_DIR$/zodziu_sarasas.py" />
+    <entry file="file://$PROJECT_DIR$/ascii.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="5016">
-          <caret line="872" column="3" lean-forward="true" selection-start-line="872" selection-start-column="3" selection-end-line="872" selection-end-column="3" />
+        <state relative-caret-position="170">
+          <caret line="10" column="2" selection-start-line="7" selection-start-column="17" selection-end-line="14" selection-end-column="9" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ascii.py">
+    <entry file="file://$PROJECT_DIR$/zodziu_sarasas.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="11" selection-end-column="11" />
+        <state relative-caret-position="437">
+          <caret line="872" column="3" selection-start-line="872" selection-start-column="3" selection-end-line="872" selection-end-column="3" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/hangman.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-408">
-          <caret line="43" lean-forward="true" selection-start-line="43" selection-end-line="43" />
+        <state relative-caret-position="1700">
+          <caret line="100" lean-forward="true" selection-start-line="100" selection-end-line="100" />
           <folding>
             <element signature="e#0#13#0" expanded="true" />
           </folding>
