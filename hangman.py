@@ -69,7 +69,7 @@ def main(): #pagrindine programa
             print "Jau spejai sia raide! Kita kart skaiciuosiu kaip klaida..."
             continue
 
-        if spejimas in zodis_atspek:
+        if spejimas in zodis_atspek: #kai spejimas teisingas N.B. SVARBI if'u VIETA KAI TIKRINAME NE TA PATI DALYKA
             raides = list(zodis_atspek)
             for indexas, value in enumerate(raides):     # rasti spetos raides padeti
                 if value == spejimas:
@@ -86,7 +86,8 @@ def main(): #pagrindine programa
             print HANGMANPICS[pak_img]
 
         spejimu_raides.append(spejimas) #pridedu speta raide i pasikartojanciu raidziu sarasa
-        # print spejimu_raides
+        spejimu_raides_stringas = ", ".join(spejimu_raides)
+        print "spetos raides: ", spejimu_raides_stringas
 
     while True:
         answer = raw_input("kartoti? (y/n): ").lower()
