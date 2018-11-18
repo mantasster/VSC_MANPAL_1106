@@ -41,11 +41,15 @@ def main(): #pagrindine programa
     zodis_atspek = random.choice(zodziu_sarasas).lower()
     pasleptas_zodis = "_" * (len(zodis_atspek))
 
+
     zodis_neatspetas = True
 
     while zodis_neatspetas: # while ciklas kuris spelioja ir atidengia raides
 
-        print pasleptas_zodis
+        pasleptas_zodis_tarpai = list(pasleptas_zodis)
+        pasleptas_zodis_tarpai = " ".join(pasleptas_zodis_tarpai)
+
+        print pasleptas_zodis_tarpai
         # print type(spejimu_raides)
         print zodis_atspek
 
@@ -59,7 +63,7 @@ def main(): #pagrindine programa
 
         while True:
             spejimas = raw_input("spek raide: ")
-            if spejimas.isalpha():  # leidziamos tik raides
+            if len(spejimas) == 1 and spejimas.isalpha():  # leidziamos tik raides po viena
                 break
 
         if spejimas in spejimu_raides: #tikrinu ar raide jau buvo speta
