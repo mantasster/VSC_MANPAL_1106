@@ -1,7 +1,5 @@
 import random
 from ascii import *
-import os
-import sys
 
 def main(): #pagrindine programa
     print "sveiki atvyke i HANGMAN'a!"
@@ -28,6 +26,8 @@ def main(): #pagrindine programa
     pak_img = 6 - gyvybes
     zodziu_sarasas = []
     spejimu_raides = []
+
+    print HANGMANPICS[pak_img]
 
     file_obj = open("zodziu_sarasas.txt", "r")  # galima kursoriu grazint i pradzia - google
 
