@@ -94,19 +94,12 @@ def main(): #pagrindine programa
         print "spetos raides: ", spejimu_raides_stringas
 
     while True:
-        kartojimas()
-
-
-def kartojimas():
-    while True:
         answer = raw_input("kartoti? (y/n): ").lower()
         if answer in ("y", "n"):
             if answer == "y":
-                main()  # restartinu programa
+                main() #restartinu programa
             else:
                 print "ate"
             break
 
 main() #paleidziu programa
-
-
